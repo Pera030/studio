@@ -161,33 +161,103 @@ Portfolio
     
 }
 
+/****************
+About
+****************/
+.timeline {
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
 
+.timeline::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    background-color: var(--lightGray);
+    width: 2px;
+    content: "";
+    margin-left: -1.5px;
+}
 
+.timeline>li {
+    min-height: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
 
+.timeline>li::before,
+.timeline>li::after {
+    display: table;
+    content: "";
+}
 
+.timeline>li::after {
+    clear: both;
+}
 
+.timeline>li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px 0 100px;
+}
 
+.timeline>li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border: 7px solid #e9ecef;
+    border-radius: 50%;
+    background-color: #ffc800;
+}
 
+.timeline>li .timeline-image h4 {
+    font-size: .9rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 12px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(min-width:768px) {
+    .timeline::before {
+        left: 50%;
+    }
+    
+    .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        text-align: right;
+        padding: 0 20px 20px 30px;
+    }
+    
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: auto;
+        left: 50%;
+        margin-left: -85px;
+    }
+    
+    .timeline>li.timeline-inverted .timeline-panel {
+        float: right;
+        text-align: left;
+        padding: 0 30px 20px 20px;
+    }
+    
+    .timeline>li.timeline-inverted .timeline-image h4 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+}
 
 
 
