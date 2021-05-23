@@ -354,11 +354,27 @@ Contact
     letter-spacing: 1px;
 }
 
+/****************
+Footer
+****************/
+footer .row {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
 
+footer .row .col-md-4:nth-child(2) a {
+    background-color: var(--text);
+    color: var(--white);
+    border-radius: 50%;
+    padding: 10px 14px;
+    margin: 0 10px;
+}
 
-
-
-
+footer .row .col-md-4:nth-child(3) a {
+    color: var(--text);
+    text-decoration: none;
+}
 
 
 
