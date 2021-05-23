@@ -5,6 +5,7 @@
     --yellowDark: #FFC800;
     --white: #fff;
     --lightGray: #e5e5e5;
+    --gray: #bfbdbd;
     --text: #212529;
     --textLight: #908e8e;
     --transition:.4s ease-in-out;
@@ -32,6 +33,10 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+.headings+p {
+    font-style: italic;
 }
 
 .container-special {
@@ -240,6 +245,10 @@ About
         padding: 0 20px 20px 30px;
     }
     
+    .timeline>li .timeline-panel .timeline-heading h4 {
+        font-weight: 700;
+    }
+    
     .timeline>li .timeline-image {
         width: 170px;
         height: auto;
@@ -255,16 +264,45 @@ About
     
     .timeline>li.timeline-inverted .timeline-image h4 {
         font-size: 1.4rem;
-        line-height: 1.5;
+        line-height: 1.6;
+        padding: 10px;
     }
 }
 
+/****************
+Team
+****************/
+#team {
+    background-color: var(--lightGray);
+}
 
+#team img {
+    width: 60%;
+    height: auto;
+    border: 7px solid var(--gray);
+}
 
+#team h3 {
+    margin-top: 20px;
+    font-weight: 700;
+}
 
+#team p {
+    margin-bottom: 20px;
+}
 
+#team a {
+    background-color: var(--text);
+    color: var(--white);
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0px 10px 0 10px;
+}
 
-
-
+#team a:hover {
+    opacity: .7;
+    transition: var(--transition);
+}
 
 
