@@ -305,4 +305,49 @@ Team
     transition: var(--transition);
 }
 
+/****************
+Logos
+****************/
+.logos .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img {
+    width: 60%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
