@@ -6,6 +6,7 @@
     --white: #fff;
     --lightGray: #dbdada;
     --text: #212529;
+    --textLight: #908e8e;
     --transition:.4s ease-in-out;
 }
 
@@ -33,6 +34,10 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 1px;
 }
 
+.container-special {
+    width: 70%;
+    margin: auto;
+}
 
 /****************
 Navigation
@@ -101,11 +106,15 @@ Jumbotron-Header
 Services
 ****************/
 
-.services .row {
-    justify-content: space-between;
+#services .row {
+    justify-content: space-around;
 }
 
-.services i.fas {
+#services .row:first-child p {
+    font-style: italic;
+}
+
+#services i.fas {
     color: var(--white);
     font-size: 4.5rem;
     background-color: var(--yellowDark);
@@ -114,7 +123,17 @@ Services
     margin-bottom: 30px;
 }
 
+#services h3 {
+    font-weight: 700;
+}
 
+#services p {
+    color: var(--textLight);
+}
+
+/****************
+Portfolio
+****************/
 
 
 
